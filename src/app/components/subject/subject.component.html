@@ -1,1 +1,11 @@
-<p>subject works!</p>
+<h2>Disciplinas</h2>
+<p>As disciplinas do curso são:</p>
+<div class="list">
+<ul>
+    <li *ngFor="let subject of subjects">
+        Disciplina: {{ subject.name}} <br>
+        Dia da Semana: {{ subject.diaDaSemana}} <br>
+        Horário: {{ subject.time }}<hr>
+    </li>
+</ul>
+</div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SubjectService } from 'src/app/services/subject.service';
+import { Subject } from 'src/app/Subject';
 
 @Component({
   selector: 'app-subject',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubjectComponent implements OnInit {
 
-  constructor() { }
+  subjects: Subject[] = [];
+
+  discipline = {
+    name: 'Marketing',
+    diaDaSemana: 'terça-feira',
+    time: '19:00'
+  }
+
+  constructor(private subjectService: SubjectService) { 
+    this.getDisciplines()
+  }
 
   ngOnInit(): void {
+  }
+
+  getDisciplines(): void {
+    this.subjectService.getAll().subscribe((subjects) => (this.subjects = subjects));
   }
 
 }

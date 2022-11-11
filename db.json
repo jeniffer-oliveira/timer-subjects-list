@@ -1,0 +1,46 @@
+{
+    "disciplinas": [
+      {
+        "id": 1,
+        "name": "Desenvolvimento para Dispositivos Móveis",
+        "diaDaSemana": "Segunda-feira",
+        "time": "19:00"
+      },
+      {
+        "id": 2,
+        "name": "Inglês",
+        "diaDaSemana": "Terça-feira",
+        "time": "19:00"
+      },
+      {
+        "id": 3,
+        "name": "Negócios e Marketing e Eletrônicos",
+        "diaDaSemana": " Terça-feira e Quarta-feira",
+        "time": "Terça-feira: 20:50 \n Quarta-feira: 19:00"
+      },
+      {
+        "id": 4,
+        "name": "Desenvolvimento para Servidores II",
+        "diaDaSemana": "Quinta",
+        "time": "19:00"
+      },
+      {
+        "id": 5,
+        "name": "Tópicos Especiais em Sistemas para Internet",
+        "diaDaSemana": "Sexta-feira",
+        "time": "19:00"
+      },
+      {
+        "id": 6,
+        "name": "Projeto de Prototipagem e Testes de Usabilidade",
+        "diaDaSemana": "Sábado",
+        "time": "8:00"
+      },
+      {
+        "id": 7,
+        "name": "Projeto de Trabalho de Graduação em Sistemas para Internet I ",
+        "diaDaSemana": "Sábado",
+        "time": "11:30"
+      }
+    ]
+  }

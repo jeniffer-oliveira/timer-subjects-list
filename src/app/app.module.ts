@@ -6,6 +6,12 @@ import { HomeComponent } from './components/home/home.component';
 import { SubjectComponent } from './components/subject/subject.component';
 import { ListComponent } from './components/list/list.component';
 import { TimerComponent } from './components/timer/timer.component';
+import { ListService } from './services/list.service';
+import { SubjectService } from './services/subject.service';
+import { TimerService } from './services/timer.service';
+import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,9 +22,12 @@ import { TimerComponent } from './components/timer/timer.component';
     TimerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule, 
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [TimerService, ListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
