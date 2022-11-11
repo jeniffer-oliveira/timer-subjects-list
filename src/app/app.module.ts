@@ -27,7 +27,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [TimerService, ListService],
+  providers: [TimerService, ListService, SubjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

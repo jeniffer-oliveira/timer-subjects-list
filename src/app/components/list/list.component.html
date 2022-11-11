@@ -1,11 +1,12 @@
-<h2>Lista de Disciplinas</h2>
-<p>Insira as disciplinas do seu curso:</p>
-<input #input type="text" />
-<button (click)="lists.add(input.value); input.value = ''">+</button>
-<hr />
-<ul>
-  <li *ngFor="let list of lists.getList(); index as i">
+<div>
+  <h2>Lista de Disciplinas</h2>
+  <p>Insira as disciplinas do seu curso:</p>
+  <input #input type="text" />
+  <button (click)="lists.add(input.value); input.value = ''">Inserir</button><hr />
+  <ul>
+    <li *ngFor="let list of lists.getList(); index as i">
     {{ list.title }}
-    <button (click)="lists.remove(i)">-</button>
-  </li>
-</ul>
+    <button (click)="lists.remove(i)">Excluir</button>
+    </li>
+  </ul>
+</div>

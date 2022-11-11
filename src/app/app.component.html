@@ -1,12 +1,15 @@
-<h1>My Services</h1>
-<p>
-  Nome: <strong>{{ Name }} </strong>
-</p>
-<p>
-  RA: <strong>{{ RA }}</strong>
-</p>
 
-<a [routerLink]="['']">Home</a>  |
-<a [routerLink]="['subject']">Subject</a>  |  
-<a [routerLink]="['timer']">Timer</a>
-<router-outlet></router-outlet>
+<div>
+  <div>
+  <h1>My Services</h1>
+  <p>Nome: <strong> {{ Name }} </strong></p>
+  <p>RA: <strong>{{ RA }}</strong></p>
+  </div>
+  
+  <nav class="navbar navbar-dark bg-dark">
+    <a [routerLink]="['']" style="color: white">Home</a>
+    <a [routerLink]="['subject']" style="color: white">Subject</a>
+    <a [routerLink]="['timer']" style="color: white">Timer</a>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
