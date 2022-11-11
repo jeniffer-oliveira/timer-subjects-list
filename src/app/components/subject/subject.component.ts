@@ -18,14 +18,15 @@ export class SubjectComponent implements OnInit {
   }
 
   constructor(private subjectService: SubjectService) { 
-    this.getDisciplines()
+    this.getSubjects()
   }
 
   ngOnInit(): void {
   }
 
-  getDisciplines(): void {
+  getSubjects(): void {
     this.subjectService.getAll().subscribe((subjects) => (this.subjects = subjects));
   }
 
 }
+

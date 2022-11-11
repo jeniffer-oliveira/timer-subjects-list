@@ -1,8 +1,12 @@
 import { Injectable } from '@angular/core';
 
+class List {
+  title!: string;
+}
 @Injectable({
   providedIn: 'root'
 })
+
 export class ListService {
 
   private lists: List[] = [];
